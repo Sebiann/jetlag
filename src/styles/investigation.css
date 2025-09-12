@@ -1,9 +1,29 @@
 .curse-desc {
     display: none;
+    color: #fff;
+    font-size: 0.98rem;
+    margin-top: 0.3em;
+    padding-left: 1.7em;
+    line-height: 1.5;
+    border-left: 2px solid #4ec3fa;
+    animation: fadeIn 0.3s;
 }
 .curse-desc.open {
     display: block;
+}
+.curse-cost {
+    display: none;
+    color: #fff;
+    font-size: 0.98rem;
+    margin-top: 0.3em;
+    padding-left: 1.7em;
+    line-height: 1.5;
+    border-left: 2px solid #4ec3fa;
     animation: fadeIn 0.3s;
+    font-weight: 700;
+}
+.curse-cost.open {
+    display: block;
 }
 /* Curses page styles */
 .curses-grid {
@@ -39,15 +59,6 @@
 }
 .curse-title .icon {
     font-size: 1.3em;
-}
-.curse-desc {
-    color: #fff;
-    font-size: 0.98rem;
-    margin-top: 0.3em;
-    padding-left: 1.7em;
-    line-height: 1.5;
-    border-left: 2px solid #4ec3fa;
-    animation: fadeIn 0.3s;
 }
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-8px); }

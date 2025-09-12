@@ -52,15 +52,19 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 });
+
+// Toggle curse description visibility
 document.addEventListener('DOMContentLoaded', () => {
-	document.querySelectorAll('.curse-title').forEach((btn, idx) => {
+	document.querySelectorAll('.curse-title').forEach((btn) => {
 		btn.addEventListener('click', () => {
 			const desc = btn.parentElement.querySelector('.curse-desc');
-			if (desc.style.display === 'none') {
-				desc.style.display = 'block';
-			} else {
-				desc.style.display = 'none';
-			}
+			const cost = btn.parentElement.querySelector('.curse-cost');
+			// Initialize display to 'none' if not set
+			if (desc.style.display === '') desc.style.display = 'none';
+			if (cost.style.display === '') cost.style.display = 'none';
+			// Toggle display
+			desc.style.display = desc.style.display === 'none' ? 'block' : 'none';
+			cost.style.display = cost.style.display === 'none' ? 'block' : 'none';
 		});
 	});
 });

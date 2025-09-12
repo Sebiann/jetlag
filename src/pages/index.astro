@@ -4,6 +4,11 @@ import Navbar from '../components/navbar.astro';
 ---
 
 <Layout>
-	<Navbar />
-	<h1>test</h1>
+  <Navbar />
+  <script>
+    window.location.href = "/matching";
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/matching" />
+  </noscript>
 </Layout>
