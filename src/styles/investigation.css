@@ -109,6 +109,10 @@
     border-radius: 4px;
     margin-left: 0.3em;
 }
+.meta-private-note {
+    font-style: italic;
+    color: lightgray;
+}
 /* Header and reset button styles */
 .investigation-header {
     display: flex;

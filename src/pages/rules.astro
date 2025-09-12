@@ -12,6 +12,57 @@ import Navbar from '../components/navbar.astro';
 			<h1 class="investigation-title">RULES</h1>
 		</div>
 		<hr class="investigation-divider" />
+		<h2><span class="icon">🎮</span> Game Basics:</h2>
+		<ul>
+			<li>Team hider travels via public transit to a hiding spot.</li>
+			<li>Team seekers work together to find them by asking preset questions.</li>
+			<li>Each answered question gives the hider cards from the Hider Deck (time bonuses, powerups, curses).</li>
+			<li>The team who hides the longest wins.</li>
+		</ul>
+		<h2><span class="icon">📏</span> Game Setup:</h2>
+		<ul>
+			<li>Choose game size:</li>
+			<ul>
+				<li>Small (town/part of a city, 4-8 hrs)</li>
+				<li>Medium (large city/region, ~1 day)</li>
+				<li>Large (country/multi-country, 2-4 days)</li>
+			</ul>
+			<li>Define map borders and pick transit systems.</li>
+		</ul>
+		<h2><span class="icon">🕰️</span> Rounds:</h2>
+        <ul>
+            <li>Teams rotate hiding/seeking roles.</li>
+            <li>Hiders get a <b>hiding period</b> to travel:
+                <ul>
+                    <li>Small: 30 min</li>
+                    <li>Medium: 60 min</li>
+                    <li>Large: 180 min</li>
+                </ul>
+            </li>
+            <li>Hider stays within a <b>¼ mile / ??? m zone</b> (½ mile / ??? km for large).</li>
+            <li>Seekers share live location tracking.</li>
+            <li>Round ends when seekers are <b>within 5 ft / ??? m</b> and spot the hider.</li>
+        </ul>
+        <h2><span class="icon">❓</span> Asking Questions:</h2>
+        <ul>
+            <li>Questions are from the <b>Investigation Book</b> (6 categories: Matching, Measuring, Radar, Thermometer, Photo, Tentacle).</li>
+            <li>Hider must answer in <b>5 min</b> (photo: 10–20 min).</li>
+            <li>Questions can be repeated but cost extra cards.</li>
+            <li>Google Street View is <b>banned</b>; other research is fine.</li>
+        </ul>
+		        <h2><span class="icon">🃏</span> Hider Deck:</h2>
+        <ul>
+            <li><b>Time Bonuses:</b> Add to your hiding time if held at end.</li>
+            <li><b>Powerups:</b> Veto, Randomize, extra draws, Move, etc.</li>
+            <li><b>Curses:</b> Slow seekers with tricky challenges.</li>
+            <li>Hand limit: <b>6 cards</b> (can expand).</li>
+        </ul>
+        <h2><span class="icon">🔍</span> Hiding Spots:</h2>
+        <ul>
+            <li>Must be <b>publicly accessible</b> and within <b>10 ft of a marked path/road</b>.</li>
+            <li>No bathrooms, private homes, or inaccessible spots.</li>
+            <li>Spot is locked when seekers enter your hiding zone.</li>
+        </ul>
 	</main>
 
 </Layout>
