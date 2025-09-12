@@ -276,6 +276,8 @@
 
 @media (max-width: 800px) {
     .investigation-container {
+        margin-left: 5px;
+        margin-right: 5px;
         padding: 1rem 0.5rem;
         border-radius: 10px;
         max-width: 98vw;
