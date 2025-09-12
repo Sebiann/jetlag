@@ -22,7 +22,7 @@ const navLinks = [
     position: relative;
     padding: 0 1rem;
     box-sizing: border-box;
-    border-bottom: 4px solid #f9c846;
+    border-bottom: 4px solid var(--yellow);
     z-index: 20;
 }
 .navbar-list {
@@ -47,7 +47,7 @@ const navLinks = [
     transition: color 0.2s;
 }
 .navbar-link:hover {
-    color: #f9c846;
+    color: var(--yellow);
     text-decoration: none;
 }
 .navbar-toggle {
@@ -57,7 +57,7 @@ const navLinks = [
     cursor: pointer;
     margin-right: 1rem;
 }
-@media (min-width: 769px) {
+@media (min-width: 960px) {
     .navbar-list {
         display: flex !important;
         flex-direction: row;
@@ -69,7 +69,7 @@ const navLinks = [
         display: none;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 959px) {
     .navbar-list {
         flex-direction: column;
         position: absolute;
