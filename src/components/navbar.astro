@@ -27,11 +27,11 @@ const navLinks = [
 }
 .navbar-list {
     display: none;
-    gap: 0.2rem; /* reduced gap */
+    gap: 0.2rem;
     list-style: none;
     margin: 0;
     padding: 0;
-    justify-content: center;
+    justify-content: flex-start; /* changed from center */
     align-items: center;
     width: 100%;
 }
@@ -40,9 +40,9 @@ const navLinks = [
 }
 .navbar-item {
     display: block;
-    padding: 0.8em 1.2em;
     cursor: pointer;
-    width: 100%;
+    padding: 0;
+    width: auto;
     box-sizing: border-box;
     transition: background 0.2s;
 }
@@ -51,7 +51,7 @@ const navLinks = [
 }
 .navbar-link {
     display: block;
-    width: 100%;
+    /* Remove width: 100%; */
     height: 100%;
     color: #fff;
     text-decoration: none;
@@ -60,7 +60,7 @@ const navLinks = [
     letter-spacing: 0.02em;
     transition: color 0.2s;
     text-align: center;
-    padding: 0;
+    padding: 0.8em 1.2em;
 }
 .navbar-link:hover {
     color: var(--yellow);
