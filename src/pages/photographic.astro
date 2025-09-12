@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+import InvestigationLayout from '../layouts/Investigation.astro';
+import Navbar from '../components/navbar.astro';
+---
+
+<Layout>
+	<Navbar />
+	<InvestigationLayout />
+	<main class="investigation-container">
+		<div class="investigation-header">
+			<h1 class="investigation-title">PHOTOS</h1>
+			<button class="reset-btn">Reset</button>
+		</div>
+		<div class="investigation-meta">
+			<span>Cost: <span class="meta-cost meta-red">Draw 1</span></span>
+			<span>Time: <span class="meta-time">S/M: 10 Min</span> <span class="meta-time meta-red">L: 20 Min</span></span>
+		</div>
+		<hr class="investigation-divider" />
+	<div class="investigation-question">Send a photo of <span class="meta-red meta-pill">SUBJECT</span></div>
+		<section class="investigation-section">
+			<h2>ALL GAMES:</h2>
+			<div class="photo-grid">
+				<button class="photo-btn"><span class="icon">🌳</span> A Tree<br /><span class="photo-desc">Must include the entire tree.</span></button>
+				<button class="photo-btn"><span class="icon">🌌</span> The Sky<br /><span class="photo-desc">Place phone on ground, shoot directly up.</span></button>
+				<button class="photo-btn"><span class="icon">🧑‍🦱</span> You<br /><span class="photo-desc">Selfie mode. Arm parallel to the ground, fully extended.</span></button>
+				<button class="photo-btn"><span class="icon">🛣️</span> Widest Street<br /><span class="photo-desc">Must include both sides of the street.</span></button>
+				<button class="photo-btn"><span class="icon">🏙️</span> Tallest Structure in Your Sightline<br /><span class="photo-desc">Tallest from your current perspective/sightline. Must include top and both sides. The top must be in the top ⅓ of the frame.</span></button>
+				<button class="photo-btn"><span class="icon">🏢</span> Any Building Visible from Station<br /><span class="photo-desc">Must stand directly outside transit station entrance. If multiple entrances, you may choose. Must include roof, both sides, with the top of building in top ⅓ of the frame.</span></button>
+			</div>
+		</section>
+		<section class="investigation-section">
+			<h2>ADD FOR MEDIUM & LARGE:</h2>
+			<div class="photo-grid">
+				<button class="photo-btn"><span class="icon">🏢</span> Tallest Building Visible from Station<br /><span class="photo-desc">Tallest from your perspective/sightline. Must stand directly outside transit station entrance. If multiple entrances, you may choose. Must include roof, both sides, with the top of building in top ⅓ of the frame.</span></button>
+				<button class="photo-btn"><span class="icon">🗺️</span> Trace Nearest Street/Path<br /><span class="photo-desc">Street/path must be visible on mapping app. Trace intersection to intersection.</span></button>
+				<button class="photo-btn"><span class="icon">🏢</span> Two Buildings<br /><span class="photo-desc">Must include bottom and up to four stories.</span></button>
+				<button class="photo-btn"><span class="icon">🍽️</span> Restaurant Interior<br /><span class="photo-desc">No zoom. Must take the picture through the window from outside the restaurant.</span></button>
+				<button class="photo-btn"><span class="icon">🚉</span> Train Platform<br /><span class="photo-desc">Must include a 5' x 5' section with three distinct elements.</span></button>
+				<button class="photo-btn"><span class="icon">🌳</span> Park<br /><span class="photo-desc">No zoom, phone perpendicular to ground. Must stand 5' from any obstruction.</span></button>
+				<button class="photo-btn"><span class="icon">🛒</span> Grocery Store Aisle<br /><span class="photo-desc">No zoom. Stand at the end of the aisle, shoot directly down.</span></button>
+				<button class="photo-btn"><span class="icon">🏛️</span> Place of Worship<br /><span class="photo-desc">Must include a 5' x 5' section with three distinct elements.</span></button>
+			</div>
+		</section>
+		<section class="investigation-section">
+			<h2>ADD FOR LARGE:</h2>
+			<div class="photo-grid">
+				<button class="photo-btn"><span class="icon">🗺️</span> ½ Mile of Streets Traced<br /><span class="photo-desc">Must be continuous, including 5 turns, no doubling back. Send N-S oriented. Streets must appear on mapping app.</span></button>
+				<button class="photo-btn"><span class="icon">⛰️</span> Tallest Mountain Visible from Station<br /><span class="photo-desc">Tallest from your perspective/sightline. Max 3x zoom. Top of mountain must be in top ⅓ of frame.</span></button>
+				<button class="photo-btn"><span class="icon">💧</span> Biggest Body of Water in Your Zone<br /><span class="photo-desc">Max 3x zoom. Must include either both sides of body of water or the horizon.</span></button>
+				<button class="photo-btn"><span class="icon">🏢</span> Five Buildings<br /><span class="photo-desc">Must include bottom and up to four stories.</span></button>
+			</div>
+		</section>
+	</main>
+</Layout>

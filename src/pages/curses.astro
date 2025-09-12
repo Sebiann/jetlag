@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import InvestigationLayout from '../layouts/Investigation.astro';
+import Navbar from '../components/navbar.astro';
+---
+
+<Layout>
+	<Navbar />
+	<InvestigationLayout />
+	<main class="investigation-container">
+		<div class="investigation-header">
+			<h1 class="investigation-title">Curses</h1>
+			<button class="reset-btn">Reset</button>
+		</div>
+		<hr class="investigation-divider" />
+		<section class="investigation-section">
+			<h2>ALL GAMES:</h2>
+			<div class="curses-grid">
+				<div class="curse-item">
+					<button class="curse-title"><span class="icon">🥚</span>Curse of the Egg Partner</button>
+					<div class="curse-desc" style="display:none;">The seekers must aquire an egg before asking another question. This egg is now treated as an official team member of the seekers. If any team members are abandoned or killed (defined as any crack, in the egg's case) before the end of your run, you are awarded an extra - - - minutes. This curse cannot be played during the endgame.</div>
+				</div>
+				<div class="curse-item">
+					<button class="curse-title"><span class="icon">🌌</span>Curse of the Sky</button>
+					<div class="curse-desc" style="display:none;">fgay.</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>

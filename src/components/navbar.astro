@@ -1,17 +1,97 @@
 ---
 const navLinks = [
-    { name: "Home", href: "/" },
     { name: "Matching", href: "/matching" },
     { name: "Measuring", href: "/measuring" },
     { name: "Thermometer", href: "/thermometer" },
     { name: "Radar", href: "/radar" },
     { name: "Tentacles", href: "/tentacles" },
     { name: "Photographic", href: "/photographic" },
+    { name: "Curses", href: "/curses" },
 ];
 ---
 
+<style>
+.navbar {
+    background: var(--jetlag-darkest-blue);
+    height: 64px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    border-bottom: 4px solid #f9c846;
+    z-index: 20;
+}
+.navbar-list {
+    display: none;
+    gap: 2.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.navbar-list.open {
+    display: flex;
+}
+.navbar-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+    transition: color 0.2s;
+}
+.navbar-link:hover {
+    color: #f9c846;
+    text-decoration: none;
+}
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+@media (min-width: 769px) {
+    .navbar-list {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background: none;
+    }
+    .navbar-toggle {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-list {
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        background: var(--jetlag-dark-blue);
+    }
+    .navbar-toggle {
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        z-index: 10;
+    }
+}
+</style>
+
 <nav class="navbar">
-    <ul class="navbar-list">
+    <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="navbar-list" id="navbar-list">
         {navLinks.map(link => (
             <li class="navbar-item">
                 <a href={link.href} class="navbar-link">{link.name}</a>
@@ -20,24 +100,12 @@ const navLinks = [
     </ul>
 </nav>
 
-<style>
-.navbar {
-    background: var(--jetlag-blue);
-    padding: 1rem;
-}
-.navbar-list {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.navbar-link {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-}
-.navbar-link:hover {
-    text-decoration: underline;
-}
-</style>
+<script is:inline>
+    const toggle = document.getElementById('navbar-toggle');
+    const list = document.getElementById('navbar-list');
+    if (toggle && list) {
+        toggle.addEventListener('click', () => {
+            list.classList.toggle('open');
+        });
+    }
+</script>

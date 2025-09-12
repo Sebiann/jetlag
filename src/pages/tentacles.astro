@@ -1,0 +1,60 @@
+---
+import Layout from '../layouts/Layout.astro';
+import InvestigationLayout from '../layouts/Investigation.astro';
+import Navbar from '../components/navbar.astro';
+---
+
+<Layout>
+	<Navbar />
+	<InvestigationLayout />
+	<main class="investigation-container">
+		<div class="investigation-header">
+			<h1 class="investigation-title">TENTACLES</h1>
+			<button class="reset-btn">Reset</button>
+		</div>
+		<div class="investigation-meta">
+			<span>Cost: <span class="meta-cost meta-red">Draw 4, Pick 2</span></span>
+			<span>Time: <span class="meta-time">5 Minutes</span></span>
+		</div>
+		<hr class="investigation-divider" />
+	<div class="investigation-question">Of all the <span class="meta-blue meta-pill">PLACES</span> within <span class="meta-red meta-pill">DISTANCE</span> of me, which are you closest to?<br />(You must also be within <span class="meta-red meta-pill">DISTANCE</span>)</div>
+		<section class="investigation-section">
+			<h2>MEDIUM & LARGE GAMES: <span class="meta-red meta-pill">1 MILES</span></h2>
+			<div class="investigation-row">
+				<div class="investigation-label"><span class="icon">🏛️</span> Museums</div>
+				<input class="investigation-notes" placeholder="Notes" />
+			</div>
+			<div class="investigation-row">
+				<div class="investigation-label"><span class="icon">📚</span> Libraries</div>
+				<input class="investigation-notes" placeholder="Notes" />
+			</div>
+			<div class="investigation-row">
+				<div class="investigation-label"><span class="icon">🎬</span> Movie Theaters</div>
+				<input class="investigation-notes" placeholder="Notes" />
+			</div>
+			<div class="investigation-row">
+				<div class="investigation-label"><span class="icon">🏥</span> Hospitals</div>
+				<input class="investigation-notes" placeholder="Notes" />
+			</div>
+		</section>
+		<section class="investigation-section">
+			<h2>LARGE GAMES ONLY: <span class="meta-red meta-pill">15 MILES</span></h2>
+			<div class="investigation-row">
+				<div class="investigation-label"><span class="icon">🚇</span> Metro Lines</div>
+				<input class="investigation-notes" placeholder="Notes" />
+			</div>
+			<div class="investigation-row">
+				<div class="investigation-label"><span class="icon">🦁</span> Zoos</div>
+				<input class="investigation-notes" placeholder="Notes" />
+			</div>
+			<div class="investigation-row">
+				<div class="investigation-label"><span class="icon">🔥</span> Aquariums</div>
+				<input class="investigation-notes" placeholder="Notes" />
+			</div>
+			<div class="investigation-row">
+				<div class="investigation-label"><span class="icon">🎢</span> Amusement Parks</div>
+				<input class="investigation-notes" placeholder="Notes" />
+			</div>
+		</section>
+	</main>
+</Layout>

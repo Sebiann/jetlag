@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+import InvestigationLayout from '../layouts/Investigation.astro';
+import Navbar from '../components/navbar.astro';
+---
+
+<Layout>
+	<Navbar />
+	<InvestigationLayout />
+	<main class="investigation-container">
+		<div class="investigation-header">
+			<h1 class="investigation-title">THERMOMETER</h1>
+			<button class="reset-btn">Reset</button>
+		</div>
+		<div class="investigation-meta">
+			<span>Cost: <span class="meta-cost meta-red">Draw 2, Pick 1</span></span>
+			<span>Time: <span class="meta-time">5 Minutes</span></span>
+		</div>
+		<hr class="investigation-divider" />
+	<div class="investigation-question">I've just traveled (at least) <span class="meta-blue meta-pill">DISTANCE</span>. Am I hotter or colder?</div>
+		<section class="investigation-section">
+			<h2>ALL GAMES</h2>
+			<div class="investigation-row">
+				<div class="investigation-label"><span class="icon">🔥</span> ½ Mile</div>
+				<input class="investigation-notes" placeholder="Notes" />
+			</div>
+			<div class="investigation-row">
+				<div class="investigation-label"><span class="icon">🔥</span> 3 Miles</div>
+				<input class="investigation-notes" placeholder="Notes" />
+			</div>
+		</section>
+		<section class="investigation-section">
+			<h2>MEDIUM GAMES</h2>
+			<div class="investigation-row">
+				<div class="investigation-label"><span class="icon">🌡️</span> 10 Miles</div>
+				<input class="investigation-notes" placeholder="Notes" />
+			</div>
+		</section>
+		<section class="investigation-section">
+			<h2>LARGE GAMES</h2>
+			<div class="investigation-row">
+				<div class="investigation-label"><span class="icon">❄️</span> 50 Miles</div>
+				<input class="investigation-notes" placeholder="Notes" />
+			</div>
+		</section>
+	</main>
+</Layout>

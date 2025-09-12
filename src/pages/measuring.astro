@@ -6,10 +6,10 @@ import Navbar from '../components/navbar.astro';
 
 <Layout>
 	<Navbar />
-    <InvestigationLayout />
+	<InvestigationLayout />
 	<main class="investigation-container">
 		<div class="investigation-header">
-			<h1 class="investigation-title">MATCHING</h1>
+			<h1 class="investigation-title">MEASURING</h1>
 			<button class="reset-btn">Reset</button>
 		</div>
 		<div class="investigation-meta">
@@ -17,7 +17,7 @@ import Navbar from '../components/navbar.astro';
 			<span>Time: <span class="meta-time">5 Minutes</span></span>
 		</div>
 		<hr class="investigation-divider" />
-		<div class="investigation-question">Is your nearest <span class="blank">______</span> the same as my nearest <span class="blank">______</span>?</div>
+		<div class="investigation-question">Compared to me, are you closer to or further from <span class="blank">______</span>?</div>
 		<section class="investigation-section">
 			<h2>TRANSIT:</h2>
 			<div class="investigation-row">
@@ -25,98 +25,93 @@ import Navbar from '../components/navbar.astro';
 				<input class="investigation-notes" placeholder="Notes" />
 			</div>
 			<div class="investigation-row">
-				<div class="investigation-label"><span class="icon">🚆</span> Transit Line</div>
+				<div class="investigation-label"><span class="icon">🚄</span> A High Speed Train Line</div>
 				<input class="investigation-notes" placeholder="Notes" />
 			</div>
 			<div class="investigation-row">
-				<div class="investigation-label"><span class="icon">✏️</span> Station's Name Length</div>
-				<input class="investigation-notes" placeholder="Notes" />
-			</div>
-			<div class="investigation-row">
-				<div class="investigation-label"><span class="icon">🛣️</span> Street or Path</div>
+				<div class="investigation-label"><span class="icon">🚉</span> A Rail Station</div>
 				<input class="investigation-notes" placeholder="Notes" />
 			</div>
 		</section>
 		<section class="investigation-section">
-			<h2>ADMINISTRATIVE DIVISIONS:</h2>
+			<h2>BORDERS:</h2>
 			<div class="investigation-row">
-				<div class="investigation-label"><span class="icon">🏢</span> 1st Admin. Division (Kanton Zürich)</div>
+				<div class="investigation-label"><span class="icon">🌐</span> An International Border</div>
 				<input class="investigation-notes" placeholder="Notes" />
 			</div>
 			<div class="investigation-row">
-				<div class="investigation-label"><span class="icon">📍</span> 2nd Admin. Division (Bezirk Zürich)</div>
+				<div class="investigation-label"><span class="icon">🇺🇸</span> A 1st Admin. Div. Border</div>
 				<input class="investigation-notes" placeholder="Notes" />
 			</div>
 			<div class="investigation-row">
-				<div class="investigation-label"><span class="icon">🏛️</span> 3rd Admin. Division (Stadt Zürich)</div>
-				<input class="investigation-notes" placeholder="Notes" />
-			</div>
-			<div class="investigation-row">
-				<div class="investigation-label"><span class="icon">🏔️</span> 4th Admin. Division (Stadtkreis 9)</div>
-				<input class="investigation-notes" placeholder="Notes" />
-			</div>
-            <div class="investigation-row">
-				<div class="investigation-label"><span class="icon">🏔️</span> 5th Admin. Division (Quartier Albisrieden)</div>
+				<div class="investigation-label"><span class="icon">📍</span> A 2nd Admin. Div. Border</div>
 				<input class="investigation-notes" placeholder="Notes" />
 			</div>
 		</section>
 		<section class="investigation-section">
 			<h2>NATURAL:</h2>
 			<div class="investigation-row">
-				<div class="investigation-label"><span class="icon">⛰️</span> Mountain</div>
+				<div class="investigation-label"><span class="icon">🌊</span> Sea Level</div>
 				<input class="investigation-notes" placeholder="Notes" />
 			</div>
 			<div class="investigation-row">
-				<div class="investigation-label"><span class="icon">🗺️</span> Landmass</div>
+				<div class="investigation-label"><span class="icon">💧</span> A Body of Water</div>
 				<input class="investigation-notes" placeholder="Notes" />
 			</div>
 			<div class="investigation-row">
-				<div class="investigation-label"><span class="icon">🌳</span> Park</div>
+				<div class="investigation-label"><span class="icon">🏖️</span> A Coastline</div>
+				<input class="investigation-notes" placeholder="Notes" />
+			</div>
+			<div class="investigation-row">
+				<div class="investigation-label"><span class="icon">⛰️</span> A Mountain</div>
+				<input class="investigation-notes" placeholder="Notes" />
+			</div>
+			<div class="investigation-row">
+				<div class="investigation-label"><span class="icon">🌳</span> A Park</div>
 				<input class="investigation-notes" placeholder="Notes" />
 			</div>
 		</section>
 		<section class="investigation-section">
 			<h2>PLACES OF INTEREST:</h2>
 			<div class="investigation-row">
-				<div class="investigation-label"><span class="icon">🎢</span> Amusement Park</div>
+				<div class="investigation-label"><span class="icon">🎢</span> An Amusement Park</div>
 				<input class="investigation-notes" placeholder="Notes" />
 			</div>
 			<div class="investigation-row">
-				<div class="investigation-label"><span class="icon">🦁</span> Zoo</div>
+				<div class="investigation-label"><span class="icon">🦁</span> A Zoo</div>
 				<input class="investigation-notes" placeholder="Notes" />
 			</div>
 			<div class="investigation-row">
-				<div class="investigation-label"><span class="icon">🔥</span> Aquarium</div>
+				<div class="investigation-label"><span class="icon">🔥</span> An Aquarium</div>
 				<input class="investigation-notes" placeholder="Notes" />
 			</div>
 			<div class="investigation-row">
-				<div class="investigation-label"><span class="icon">⛳</span> Golf Course</div>
+				<div class="investigation-label"><span class="icon">⛳</span> A Golf Course</div>
 				<input class="investigation-notes" placeholder="Notes" />
 			</div>
 			<div class="investigation-row">
-				<div class="investigation-label"><span class="icon">🏛️</span> Museum</div>
+				<div class="investigation-label"><span class="icon">🏛️</span> A Museum</div>
 				<input class="investigation-notes" placeholder="Notes" />
 			</div>
 			<div class="investigation-row">
-				<div class="investigation-label"><span class="icon">🎬</span> Movie Theater</div>
+				<div class="investigation-label"><span class="icon">🎬</span> A Movie Theater</div>
 				<input class="investigation-notes" placeholder="Notes" />
 			</div>
 		</section>
 		<section class="investigation-section">
 			<h2>PUBLIC UTILITIES:</h2>
 			<div class="investigation-row">
-				<div class="investigation-label"><span class="icon">🏥</span> Hospital</div>
+				<div class="investigation-label"><span class="icon">🏥</span> A Hospital</div>
 				<input class="investigation-notes" placeholder="Notes" />
 			</div>
 			<div class="investigation-row">
-				<div class="investigation-label"><span class="icon">📚</span> Library</div>
+				<div class="investigation-label"><span class="icon">📚</span> A Library</div>
 				<input class="investigation-notes" placeholder="Notes" />
 			</div>
 			<div class="investigation-row">
-				<div class="investigation-label"><span class="icon">🏛️🌐</span> Foreign Consulate</div>
+				<div class="investigation-label"><span class="icon">🏛️🌐</span> A Foreign Consulate</div>
 				<input class="investigation-notes" placeholder="Notes" />
 			</div>
 		</section>
 	</main>
 </Layout>
-
