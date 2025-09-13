@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/navbar.astro';
+---
+
+<Layout>
+  <Navbar />
+  <script>
+    window.location.href = "/rules";
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/rules" />
+  </noscript>
+</Layout>
