@@ -68,3 +68,16 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 });
+
+// Toggle curse description visibility
+document.addEventListener('DOMContentLoaded', () => {
+	document.querySelectorAll('.card-title').forEach((btn) => {
+		btn.addEventListener('click', () => {
+			const desc = btn.parentElement.querySelector('.card-desc');
+			// Initialize display to 'none' if not set
+			if (desc.style.display === '') desc.style.display = 'none';
+			// Toggle display
+			desc.style.display = desc.style.display === 'none' ? 'block' : 'none';
+		});
+	});
+});
